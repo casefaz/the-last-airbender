@@ -7,9 +7,6 @@ RSpec.describe 'fire index page' do
               "allies": [
                           "Ozai"
                         ],
-              "enemies": [
-                          "Earth Kingdom"
-                          ],
               "name": "Chan (Fire Nation admiral)",
               "affiliation": "Fire Nation Navy"
             }
@@ -19,8 +16,8 @@ RSpec.describe 'fire index page' do
     expect(current_path).to eq('/search')
 
     expect(page).to have_content('Allies: Ozai')
-    expect(page).to have_content('Name')
-    expect(page).to have_content('Enemies')
-    expect(page).to have_content('Affiliation')
+    expect(page).to have_content('Name: Chan (Fire Nation admiral)')
+    expect(page).to have_content('Enemies: none')
+    expect(page).to have_content('Affiliation: Fire Nation Navy')
   end
 end

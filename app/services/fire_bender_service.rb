@@ -1,0 +1,3 @@
+class FireBenderService
+  
+end

@@ -16,7 +16,7 @@ RSpec.describe Fire do
     character = Fire.new(data)
 
     expect(character.allies).to eq('Ozai')
-    expect(character.name).to eq('Chan (Fire Nation Admiral}')
+    expect(character.name).to eq('Chan (Fire Nation admiral)')
     expect(character.affiliation).to eq('Fire Nation Navy')
     expect(character.enemies).to eq('Earth Kingdom')
 

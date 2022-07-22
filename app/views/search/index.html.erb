@@ -1,0 +1,8 @@
+<%= @fire_nation.count %>
+<% @fire_nation[0..24].each do |fire_character| %>
+  <h4>Name: <%= fire_character.name %></h4>
+  <p>Allies: <%= fire_character.allies %></p>
+  <p>Enemies: <%= fire_character.enemies %></p>
+  <p>Affiliation: <%= fire_character.affiliation %></p>
+  <p>Photo: <%= fire_character.photo %></p>
+<% end %>

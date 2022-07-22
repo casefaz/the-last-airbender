@@ -2,17 +2,18 @@ require 'rails_helper'
 
 RSpec.describe Fire do 
   it 'exists and has attributes' do
-     data = {
-      "_id": "5cf5679a915ecad153ab68fd",
-      "allies": [
-                  "Ozai"
-                ],
-      "enemies": [
-                  "Earth Kingdom"
-                  ],
-      "name": "Chan (Fire Nation admiral)",
-      "affiliation": "Fire Nation Navy"
-  }
+    data = {
+            "_id": "5cf5679a915ecad153ab68fd",
+            "allies": [
+                        "Ozai"
+                      ],
+            "enemies": [
+                        "Earth Kingdom"
+                        ],
+            "name": "Chan (Fire Nation admiral)",
+            "affiliation": "Fire Nation Navy"
+             }
+             
     character = Fire.new(data)
 
     expect(character.allies).to eq('Ozai')

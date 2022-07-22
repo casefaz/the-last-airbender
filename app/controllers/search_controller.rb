@@ -1,5 +1,12 @@
 class SearchController < ApplicationController
   def index 
-    @fire_nation = FireFacade.get_nation_info(params[:affiliation])
+    # binding.pry
+      @fire_nation = FireFacade.get_nation_info(search_nation)
+  end
+
+  private 
+
+  def search_nation
+    params[:nation].gsub(/_/, ' ')
   end
 end

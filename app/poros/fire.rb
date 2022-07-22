@@ -7,8 +7,8 @@ class Fire
               :photo
   def initialize(data)
     @name = data[:name]
-    @allies = data[:allies].join(',')
-    @enemies = data[:enemies].join(',')
+    @allies = data[:allies].join(', ')
+    @enemies = data[:enemies].join(', ')
     @affiliation = data[:affiliation]
     @photo = data[:photoUrl]
   end
